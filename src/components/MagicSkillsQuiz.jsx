@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import questionsData from '../question.json';
 
 export default function MagicSkillsQuiz() {
-<<<<<<< HEAD
 	const [quizStarted, setQuizStarted] = useState(false); //Quiz Start
 	const [currentQuestion, setCurrentQuestion] = useState(0); //Current question
 	const [score, setScore] = useState(0);
@@ -12,24 +11,11 @@ export default function MagicSkillsQuiz() {
 	const [showResult, setShowResult] = useState(false); //Result
 
 	//Delete data from localStorage after refreshing web-page
-=======
-	const [quizStarted, setQuizStarted] = useState(false);
-	const [currentQuestion, setCurrentQuestion] = useState(0);
-	const [score, setScore] = useState(0);
-	const [selected, setSelected] = useState(null);
-	const [answers, setAnswers] = useState([]);
-	const [showResult, setShowResult] = useState(false);
-
->>>>>>> 22264837c2d4d3aab64ac61d5d66004f31324220
 	useEffect(() => {
 		localStorage.removeItem('hpQuizScore');
 		setScore(0);
 	}, []);
-
-<<<<<<< HEAD
 	//Render questions from API in json data
-=======
->>>>>>> 22264837c2d4d3aab64ac61d5d66004f31324220
 	useEffect(() => {
 		if (quizStarted) {
 			const shuffled = [...questionsData].map((q) => ({
@@ -41,11 +27,7 @@ export default function MagicSkillsQuiz() {
 			setAnswers(shuffled);
 		}
 	}, [quizStarted]);
-
-<<<<<<< HEAD
 	//Function for handling events with answers and save right answers in localStorage
-=======
->>>>>>> 22264837c2d4d3aab64ac61d5d66004f31324220
 	const handleAnswer = (optionIndex) => {
 		setSelected(optionIndex);
 
@@ -66,11 +48,7 @@ export default function MagicSkillsQuiz() {
 			}
 		}, 1000);
 	};
-
-<<<<<<< HEAD
 	//Function for reseting localStorage and quiz
-=======
->>>>>>> 22264837c2d4d3aab64ac61d5d66004f31324220
 	const resetQuiz = () => {
 		setQuizStarted(false);
 		setCurrentQuestion(0);
@@ -89,11 +67,7 @@ export default function MagicSkillsQuiz() {
 			</div>
 		);
 	}
-<<<<<<< HEAD
 	//Rendering result when quiz is over
-=======
-
->>>>>>> 22264837c2d4d3aab64ac61d5d66004f31324220
 	if (showResult) {
 		return (
 			<div className="quiz-result">
@@ -124,10 +98,7 @@ export default function MagicSkillsQuiz() {
 							const isOther = selected !== null && !isSelected;
 
 							return (
-<<<<<<< HEAD
 								//Animate buttons after pushing
-=======
->>>>>>> 22264837c2d4d3aab64ac61d5d66004f31324220
 								<motion.button
 									key={option.text}
 									className="quiz-option"
