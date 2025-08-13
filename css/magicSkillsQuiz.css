@@ -1,0 +1,50 @@
+.quiz-container {
+	text-align: center;
+	max-width: 800px;
+	height: 700px;
+	margin: auto;
+	background-image: url('/images/papyrus-scroll-scroll-png-transparent.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.quiz-option {
+	width: 70%;
+	margin: 10px 0;
+	padding: 10px;
+	font-size: 18px;
+	border: none;
+	cursor: pointer;
+	border-radius: 8px;
+	background: var(--blue-10);
+}
+
+.quiz-start {
+	place-self: center;
+}
+
+.start-btn {
+	font-size: 20px;
+	padding: 10px 20px;
+	cursor: pointer;
+	position: relative;
+	align-items: center;
+}
+
+.quiz-container h3 {
+	padding-top: 8rem;
+}
+.quiz-result {
+	display: grid;
+}
+
+.quiz-result h2 {
+	text-align: center;
+	padding-left: 9rem;
+}
+.quiz-result button {
+	width: auto;
+	margin: 2rem auto 0 auto;
+	display: block;
+}
