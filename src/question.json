@@ -1,0 +1,172 @@
+[
+	{
+		"question": "What does the spell Accio do?",
+		"answers": [
+			"Summons an object to the caster",
+			"Unlocks doors",
+			"Creates a shield",
+			"Levitate an object"
+		],
+		"correct": 0
+	},
+	{
+		"question": "What does the spell Alohomora do?",
+		"answers": [
+			"Unlocks doors and locks",
+			"Disarms the opponent",
+			"Lights the tip of the wand",
+			"Freezes the target"
+		],
+		"correct": 0
+	},
+	{
+		"question": "What does the spell Avada Kedavra do?",
+		"answers": [
+			"Kills the target instantly",
+			"Causes unbearable pain",
+			"Stuns the target",
+			"Erases memories"
+		],
+		"correct": 0
+	},
+	{
+		"question": "What does the spell Crucio do?",
+		"answers": [
+			"Inflicts unbearable pain",
+			"Controls the victim",
+			"Destroys an object",
+			"Freezes the target"
+		],
+		"correct": 0
+	},
+	{
+		"question": "What does the spell Expelliarmus do?",
+		"answers": [
+			"Disarms the opponent",
+			"Unlocks doors",
+			"Summons an object",
+			"Stuns the target"
+		],
+		"correct": 0
+	},
+	{
+		"question": "What does the spell Expecto Patronum do?",
+		"answers": [
+			"Summons a Patronus",
+			"Lights the wand",
+			"Blocks a spell",
+			"Levitate an object"
+		],
+		"correct": 0
+	},
+	{
+		"question": "What does the spell Imperio do?",
+		"answers": [
+			"Controls the victim completely",
+			"Kills instantly",
+			"Creates a protective shield",
+			"Summons an object"
+		],
+		"correct": 0
+	},
+	{
+		"question": "What does the spell Lumos do?",
+		"answers": [
+			"Lights the tip of the wand",
+			"Summons an object",
+			"Unlocks doors",
+			"Heals wounds"
+		],
+		"correct": 0
+	},
+	{
+		"question": "What does the spell Nox do?",
+		"answers": [
+			"Extinguishes light from Lumos",
+			"Blocks a spell",
+			"Destroys objects",
+			"Controls the victim"
+		],
+		"correct": 0
+	},
+	{
+		"question": "What does the spell Obliviate do?",
+		"answers": [
+			"Erases memories",
+			"Stuns the target",
+			"Unlocks doors",
+			"Summons an object"
+		],
+		"correct": 0
+	},
+	{
+		"question": "What does the spell Petrificus Totalus do?",
+		"answers": [
+			"Paralyzes the opponent",
+			"Kills instantly",
+			"Controls the victim",
+			"Blocks a spell"
+		],
+		"correct": 0
+	},
+	{
+		"question": "What does the spell Protego do?",
+		"answers": [
+			"Creates a magical shield",
+			"Summons an object",
+			"Erases memories",
+			"Lights the wand"
+		],
+		"correct": 0
+	},
+	{
+		"question": "What does the spell Reducto do?",
+		"answers": [
+			"Destroys or blasts objects",
+			"Unlocks doors",
+			"Blocks a spell",
+			"Paralyzes the target"
+		],
+		"correct": 0
+	},
+	{
+		"question": "What does the spell Rictusempra do?",
+		"answers": [
+			"Causes uncontrollable laughter",
+			"Levitate an object",
+			"Erases memories",
+			"Paralyzes the opponent"
+		],
+		"correct": 0
+	},
+	{
+		"question": "What does the spell Sectumsempra do?",
+		"answers": [
+			"Causes deep cuts on the target",
+			"Kills instantly",
+			"Stuns the target",
+			"Blocks a spell"
+		],
+		"correct": 0
+	},
+	{
+		"question": "What does the spell Stupefy do?",
+		"answers": [
+			"Stuns the target",
+			"Summons an object",
+			"Unlocks doors",
+			"Causes deep cuts"
+		],
+		"correct": 0
+	},
+	{
+		"question": "What does the spell Wingardium Leviosa do?",
+		"answers": [
+			"Levitates an object",
+			"Unlocks doors",
+			"Creates a shield",
+			"Summons a Patronus"
+		],
+		"correct": 0
+	}
+]
