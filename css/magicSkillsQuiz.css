@@ -39,12 +39,27 @@
 	display: grid;
 }
 
-.quiz-result h2 {
+.quiz-result h2,
+h3 {
 	text-align: center;
-	padding-left: 9rem;
+	place-self: center;
 }
 .quiz-result button {
 	width: auto;
 	margin: 0 auto;
 	display: block;
+}
+
+.timeWrapper {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0;
+	padding: 2rem;
+}
+
+.currentTime,
+.gameTimer {
+	color: var(--off-white);
 }

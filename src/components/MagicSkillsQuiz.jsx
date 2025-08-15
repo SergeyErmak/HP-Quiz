@@ -2,8 +2,12 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import questionsData from '../question.json';
 
-export default function MagicSkillsQuiz() {
-	const [quizStarted, setQuizStarted] = useState(false); //Quiz Start
+export default function MagicSkillsQuiz({
+	quizStarted,
+	setQuizStarted,
+	setGameFinished,
+	elapsed,
+}) {
 	const [currentQuestion, setCurrentQuestion] = useState(0); //Current question
 	const [score, setScore] = useState(0);
 	const [selected, setSelected] = useState(null); //Selected question
@@ -45,12 +49,14 @@ export default function MagicSkillsQuiz() {
 				setCurrentQuestion((prev) => prev + 1);
 			} else {
 				setShowResult(true);
+				setGameFinished(true);
 			}
 		}, 1000);
 	};
 	//Function for reseting localStorage and quiz
 	const resetQuiz = () => {
 		setQuizStarted(false);
+		setGameFinished(false);
 		setCurrentQuestion(0);
 		setSelected(null);
 		setShowResult(false);
@@ -74,6 +80,10 @@ export default function MagicSkillsQuiz() {
 				<h2>
 					Your score: {score} / {answers.length}
 				</h2>
+				<h3>
+					Time spent: {Math.floor(elapsed / 60)}:
+					{elapsed % 60 < 10 ? `0${elapsed % 60}` : elapsed % 60}
+				</h3>
 				{score === answers.length && <h2>You&apos;re really big fun</h2>}
 				{score >= answers.length - 2 && score < answers.length && (
 					<h2>Almost perfect! Great job!</h2>
