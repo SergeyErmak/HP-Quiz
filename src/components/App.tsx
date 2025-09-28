@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import MagicSkillsQuiz from './MagicSkillsQuiz.jsx';
-import CurrentTime from './CurrentTime.jsx';
-import GameTimer from './GameTimer.jsx';
+import MagicSkillsQuiz from './MagicSkillsQuiz.tsx';
+import CurrentTime from './CurrentTime.tsx';
+import GameTimer from './GameTimer.tsx';
 
 export default function App() {
 	const [quizStarted, setQuizStarted] = useState(false);
