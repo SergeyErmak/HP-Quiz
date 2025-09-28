@@ -2,6 +2,13 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import questionsData from '../question.json';
 
+// type Props = {
+// 	quizStarted: boolean;
+// 	setQuizStarted: () => boolean;
+// 	setGameFinished: () => boolean;
+// 	elapsed: number;
+// };
+
 export default function MagicSkillsQuiz({
 	quizStarted,
 	setQuizStarted,
