@@ -38,7 +38,7 @@ export default function MagicSkillsQuiz({
 		if (optionIndex === answers[currentQuestion].correct) {
 			setScore((prev) => {
 				const newScore = prev + 1;
-				localStorage.setItem('hpQuizScore', newScore);
+				localStorage.setItem('hpQuizScore', `${newScore}`);
 				return newScore;
 			});
 		}
