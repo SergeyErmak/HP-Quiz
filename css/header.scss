@@ -1,0 +1,14 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: solid 1px var(--border-color);
+
+	a {
+		font-family: HarryP;
+		font-size: 2em;
+        text-decoration: none;
+        color: Orange;
+	}
+}
