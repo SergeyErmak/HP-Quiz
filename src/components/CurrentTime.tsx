@@ -11,13 +11,14 @@ export default function CurrentTime() {
 		return () => clearInterval(interval);
 	}, []);
 
-	const formatTime = (time) => (time < 10 ? `0${time}` : time);
+	//const formatTime = (time) => (time < 10 ? `0${time}` : time);
 
 	return (
 		<div className="currentTime">
 			<p>
-				{formatTime(currentTime.getHours())}:
-				{formatTime(currentTime.getMinutes())}
+				00:00
+				{/* {formatTime(currentTime.getHours())}:
+				{formatTime(currentTime.getMinutes())} */}
 			</p>
 		</div>
 	);
