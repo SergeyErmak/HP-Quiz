@@ -31,7 +31,7 @@ export default [
 			// Empfohlene Regeln aus Plugins aktivieren
 			...js.configs.recommended.rules,
 			...react.configs.recommended.rules,
-			...react.configs['jsx-runtime'].rules,
+			...react.configs['tsx-runtime'].rules,
 			...reactHooks.configs.recommended.rules,
 			...jsxA11y.configs.recommended.rules,
 
@@ -49,7 +49,7 @@ export default [
 			],
 			//'react/no-unknown-property': ['error', { ignore: ['xyz'] }],
 		},
-		/* Schlüsselname ist so wie der Teil nach eslint-plugin- im Modulname. */
+
 		plugins: {
 			react,
 			'react-hooks': reactHooks,

@@ -1,24 +1,29 @@
 import { useState, useEffect } from 'react';
 
 export default function CurrentTime() {
-	const [currentTime, setCurrentTime] = useState(new Date());
+	const date = new Date();
+	const [currentTime, setCurrentTime] = useState(date);
 
 	useEffect(() => {
 		const interval = setInterval(() => {
-			setCurrentTime(new Date());
+			if (
+				date.getHours() != currentTime.getHours() ||
+				date.getMinutes() != currentTime.getMinutes()
+			) {
+				setCurrentTime(date);
+			}
 		}, 1000);
 
 		return () => clearInterval(interval);
 	}, []);
 
-	//const formatTime = (time) => (time < 10 ? `0${time}` : time);
+	const formatTime = (time: number) => (time < 10 ? `0${time}` : time);
 
 	return (
 		<div className="currentTime">
 			<p>
-				00:00
-				{/* {formatTime(currentTime.getHours())}:
-				{formatTime(currentTime.getMinutes())} */}
+				{formatTime(currentTime.getHours())}:
+				{formatTime(currentTime.getMinutes())}
 			</p>
 		</div>
 	);
